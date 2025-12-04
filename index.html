@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I AM NIGERIA | Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nigeria-green': '#008751',
+                        'gold': '#d4af37',
+                        'dark-bg': '#0a0a0a',
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white antialiased selection:bg-nigeria-green selection:text-white">
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference">
+        <div class="text-2xl font-cinzel font-bold tracking-widest">BEDAZZLE MEDIA</div>
+        <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
+            <a href="#synopsis" class="hover:text-nigeria-green transition-colors">Synopsis</a>
+            <a href="#vision" class="hover:text-nigeria-green transition-colors">Vision</a>
+            <a href="#script" class="hover:text-nigeria-green transition-colors">The Script</a>
+            <a href="#investment" class="hover:text-nigeria-green transition-colors">Invest</a>
+        </div>
+        <a href="#contact" class="px-6 py-2 border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm tracking-widest uppercase">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/hero.png" alt="Running Man" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <p class="text-gold tracking-[0.5em] text-sm md:text-base mb-4 reveal-text">A SHORT FILM BY SEUN FAKUADE</p>
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-cinzel font-bold mb-6 tracking-tighter glitch" data-text="I AM NIGERIA">I AM NIGERIA</h1>
+            <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto text-gray-300 leading-relaxed reveal-text delay-300">
+                "Until the lions have their own historians, the history of the hunt will always glorify the hunter."
+            </p>
+            <div class="mt-12 reveal-text delay-500">
+                <a href="#synopsis" class="btn-cinematic inline-block px-8 py-3 border border-nigeria-green text-nigeria-green hover:bg-nigeria-green hover:text-white transition-all duration-300 tracking-widest uppercase text-sm">
+                    Enter the Story
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Synopsis Section -->
+    <section id="synopsis" class="relative py-24 px-6 md:px-12 bg-black">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="reveal-text">
+                <h2 class="text-4xl md:text-5xl font-cinzel mb-8 text-gold">The Soul of a Nation</h2>
+                <p class="text-lg text-gray-400 mb-6 leading-relaxed">
+                    An allegorical short film about Nigerian identity. A timeless, powerful piece for history.
+                </p>
+                <p class="text-lg text-gray-400 mb-6 leading-relaxed">
+                    A man wakes up in a council chamber, bound by chains. He is surrounded by the chiefs of every major tribe. They accuse him of theft. They accuse him of betrayal.
+                </p>
+                <p class="text-lg text-white font-semibold leading-relaxed">
+                    But he is not a thief. He is the land itself. He is the history they have forgotten. He is Nigeria.
+                </p>
+            </div>
+            <div class="relative h-[600px] img-zoom-container rounded-lg overflow-hidden reveal-text delay-200">
+                <img src="assets/council.png" alt="Council Chamber" class="w-full h-full object-cover img-zoom">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-8 left-8">
+                    <p class="text-gold font-cinzel text-xl">The Council Chamber</p>
+                    <p class="text-sm text-gray-400">Concept Art</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Highlights Section -->
+    <section id="script" class="relative py-24 bg-zinc-900 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <img src="assets/light_leak.png" alt="Light Leak" class="w-full h-full object-cover mix-blend-screen">
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <h2 class="text-center text-3xl md:text-4xl font-cinzel mb-16 text-gray-300">From the Script</h2>
+            
+            <div class="space-y-12 font-mono text-sm md:text-base bg-black/50 p-8 md:p-12 rounded-sm border-l-2 border-nigeria-green shadow-2xl reveal-text">
+                <div class="text-gray-400">
+                    <p class="mb-2 text-gold">RUNNING MAN</p>
+                    <p class="pl-4 border-l border-gray-700">I am the soil you sold.<br>I am the blood you spilled.<br>I am every stolen dream.</p>
+                </div>
+                
+                <div class="text-gray-400">
+                    <p class="mb-2 italic text-gray-500">(Beat. Chiefs exchange looks—they ALMOST understand.)</p>
+                </div>
+
+                <div class="text-gray-400">
+                    <p class="mb-2 text-white">CHIEF OKEKE</p>
+                    <p class="pl-4 border-l border-gray-700">No... it can't be...</p>
+                </div>
+
+                <div class="text-gray-400">
+                    <p class="mb-2 text-gold">RUNNING MAN</p>
+                    <p class="pl-4 border-l border-gray-700">I gave you EVERYTHING.<br><br>And you gave me NOTHING but chains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mood Section -->
+    <section id="vision" class="relative py-24 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal-text">
+                <h2 class="text-4xl md:text-6xl font-cinzel mb-4">Director's Vision</h2>
+                <p class="text-gray-400 tracking-widest uppercase text-sm">Deakins • Villeneuve • Nolan</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative h-[400px] md:h-[600px] img-zoom-container group overflow-hidden">
+                    <img src="assets/glowing_man.png" alt="Glowing Man" class="w-full h-full object-cover img-zoom grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40">
+                        <p class="text-2xl font-cinzel text-white tracking-widest">REBIRTH</p>
+                    </div>
+                </div>
+                <div class="relative h-[400px] md:h-[600px] img-zoom-container group overflow-hidden">
+                    <img src="assets/eagle.png" alt="Eagle" class="w-full h-full object-cover img-zoom grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40">
+                        <p class="text-2xl font-cinzel text-white tracking-widest">FREEDOM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="investment" class="relative py-24 px-6 bg-gradient-to-b from-zinc-900 to-black">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-cinzel mb-8 text-gold reveal-text">The Ask</h2>
+            <div class="bg-zinc-900/50 border border-zinc-800 p-12 rounded-lg backdrop-blur-sm reveal-text delay-200">
+                <p class="text-6xl font-bold text-white mb-4">₦25,000,000</p>
+                <p class="text-gray-400 mb-8 uppercase tracking-widest text-sm">Production Budget</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-sm text-gray-300">
+                    <div class="flex flex-col items-center">
+                        <span class="block w-2 h-2 bg-nigeria-green rounded-full mb-2"></span>
+                        Cast & Crew
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="block w-2 h-2 bg-nigeria-green rounded-full mb-2"></span>
+                        Equipment
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="block w-2 h-2 bg-nigeria-green rounded-full mb-2"></span>
+                        Set Design
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="block w-2 h-2 bg-nigeria-green rounded-full mb-2"></span>
+                        Costumes
+                    </div>
+                </div>
+
+                <p class="text-lg text-gray-300 mb-12 leading-relaxed">
+                    This film is festival-bound. Sundance. Cannes. TIFF. AFRIFF.<br>
+                    Join us in telling the story of the soul of Nigeria.
+                </p>
+
+                <a href="mailto:seun@bedazzlemedia.com" class="btn-cinematic inline-block px-12 py-4 bg-white text-black font-bold tracking-widest uppercase hover:bg-gold transition-colors duration-300">
+                    Invest Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-12 bg-black border-t border-zinc-900 text-center">
+        <p class="font-cinzel text-2xl font-bold mb-4">BEDAZZLE MEDIA</p>
+        <p class="text-gray-500 text-sm tracking-widest uppercase">Written & Directed by Seun Fakuade</p>
+        <p class="text-gray-600 text-xs mt-8">© 2025 I AM NIGERIA. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Intersection Observer for Text Reveal
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-text').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Custom Cursor Follower
+        const cursor = document.createElement('div');
+        cursor.classList.add('custom-cursor');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2)';
+                cursor.style.backgroundColor = 'rgba(0, 135, 81, 0.2)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+</body>
+</html>

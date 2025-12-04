@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --color-primary: #008751;
+    --color-gold: #d4af37;
+    --color-dark: #0a0a0a;
+    --slide-width: 1123px;
+    /* A4 Landscape approx width in px at 96dpi, or just a standard 16:9 ratio */
+    --slide-height: 794px;
+    /* A4 Landscape approx height */
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+body {
+    background-color: #1a1a1a;
+    /* Dark background for viewing in browser */
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Slide Container */
+.slide {
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background-color: var(--color-dark);
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    page-break-after: always;
+    break-after: page;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Print Specifics */
+@media print {
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    .slide {
+        margin: 0;
+        box-shadow: none;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel', serif;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-green {
+    color: var(--color-primary);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: #a0a0a0;
+}
+
+/* Components */
+.slide-content {
+    padding: 60px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+}
+
+.slide-number {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-family: 'Cinzel', serif;
+    color: var(--color-gold);
+    font-size: 14px;
+    z-index: 20;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-family: 'Cinzel', serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    letter-spacing: 2px;
+    z-index: 20;
+}
+
+/* Table of Contents */
+.toc-list {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.toc-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.toc-number {
+    font-family: 'Cinzel', serif;
+    color: var(--color-gold);
+    font-size: 24px;
+    width: 40px;
+}
+
+.toc-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.toc-line {
+    flex-grow: 1;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    margin: 0 20px;
+}
