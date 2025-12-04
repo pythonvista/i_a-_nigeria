@@ -4,6 +4,7 @@
     --color-primary: #008751;
     --color-gold: #d4af37;
     --color-dark: #0a0a0a;
+    --color-charcoal: #121212;
     --slide-width: 1123px;
     /* A4 Landscape approx width in px at 96dpi, or just a standard 16:9 ratio */
     --slide-height: 794px;
@@ -159,4 +160,125 @@ h4 {
     flex-grow: 1;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
     margin: 0 20px;
+}
+
+/* --- New Editorial Styles (Ported from pdf2_styles.css) --- */
+
+.bg-charcoal {
+    background-color: var(--color-charcoal);
+}
+
+.editorial-line {
+    height: 1px;
+    background-color: var(--color-gold);
+    width: 100px;
+    margin: 20px 0;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-family: 'Cinzel', serif;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.02);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Grid Layouts */
+.grid-editorial {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100%;
+}
+
+.grid-editorial-reverse {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    height: 100%;
+}
+
+.content-panel {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.image-panel {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-box {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 30px;
+    margin: 30px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Character Cards */
+.char-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Comparables */
+.comp-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-gold);
+    margin: 0 auto 20px;
+}
+
+.comp-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- New Styles from pdf3 (Timeline, Stats) --- */
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: var(--color-gold);
+    border-radius: 50%;
 }
