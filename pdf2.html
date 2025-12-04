@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I AM NIGERIA - Enhanced Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="pdf2_styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nigeria-green': '#008751',
+                        'gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Slide 1: Cover -->
+    <div class="slide">
+        <img src="assets/hero.png" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+        <div class="relative z-10 flex flex-col justify-end h-full p-20 pb-32">
+            <p class="text-gold tracking-[0.8em] text-sm mb-4 uppercase">Bedazzle Media Presents</p>
+            <h1 class="text-9xl font-black text-white mb-2 tracking-tighter leading-none">I AM<br><span
+                    class="text-nigeria-green">NIGERIA</span></h1>
+            <div class="w-24 h-2 bg-gold mt-8 mb-8"></div>
+            <p class="text-xl text-gray-300 font-light tracking-widest uppercase">A Short Film by Seun Fakuade</p>
+        </div>
+        <div class="page-number">01</div>
+    </div>
+
+    <!-- Slide 2: Logline & Hook -->
+    <div class="slide">
+        <div class="grid-editorial">
+            <div class="content-panel bg-charcoal">
+                <h2 class="text-gold text-sm tracking-[0.5em] mb-4">The Hook</h2>
+                <h3 class="text-4xl text-white font-playfair italic leading-tight mb-12">
+                    "Until the lions have their own historians, the history of the hunt will always glorify the hunter."
+                </h3>
+                <div class="editorial-line"></div>
+                <h2 class="text-gold text-sm tracking-[0.5em] mb-4">Logline</h2>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    A man wakes up in an ancient council chamber, bound by chains and accused of theft by the chiefs of
+                    Nigeria's tribes. But as the trial unfolds, he reveals himself to be not a thief, but the living
+                    embodiment of the nation itself—and he has come to pass judgment on them.
+                </p>
+            </div>
+            <div class="image-panel">
+                <img src="assets/council.png" class="grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent">
+                    <p class="text-white font-cinzel text-xl">The Trial Begins</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">02</div>
+    </div>
+
+    <!-- Slide 3: Synopsis -->
+    <div class="slide">
+        <div class="watermark">STORY</div>
+        <div class="p-20 relative z-10 h-full flex flex-col justify-center">
+            <h2 class="text-6xl text-white mb-16">Synopsis</h2>
+            <div class="grid grid-cols-2 gap-16">
+                <div>
+                    <p class="text-gold text-lg mb-2 font-bold uppercase">The Awakening</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        The film opens in a surreal, mist-filled forest where a man in a torn designer suit is hunted by
+                        a mob. He is beaten, stripped of his wealth, and left for dead. He wakes up in a timeless
+                        Council Chamber, chained before the Oba and chiefs representing every major Nigerian ethnic
+                        group.
+                    </p>
+                    <p class="text-gold text-lg mb-2 font-bold uppercase">The Accusation</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        The chiefs accuse him of stealing their resources—gold, oil, land. They see him as a corrupt
+                        politician or a foreign exploiter. They demand he return what he has taken.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-gold text-lg mb-2 font-bold uppercase">The Revelation</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        The man laughs. He begins to recount their own histories—secrets only the land itself would
+                        know. He speaks of the Benin Bronzes, the Civil War, the oil spills, the stolen daughters of
+                        Chibok. He reveals that he is not a thief. He is <strong>Nigeria</strong>.
+                    </p>
+                    <p class="text-gold text-lg mb-2 font-bold uppercase">The Judgment</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        As he speaks, he transforms. The Nigerian flag glows from within his skin. He breaks his chains,
+                        shattering the chamber and the chiefs' authority. He walks out into a new dawn, free at last.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">03</div>
+    </div>
+
+    <!-- Slide 4: Character Breakdown -->
+    <div class="slide">
+        <div class="grid-editorial-reverse">
+            <div class="image-panel">
+                <img src="assets/glowing_man.png" style="object-position: top;">
+            </div>
+            <div class="content-panel bg-charcoal">
+                <h2 class="text-4xl text-white mb-12">Characters</h2>
+
+                <div class="char-card">
+                    <h3 class="text-gold text-xl mb-2">The Running Man</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-4">The Protagonist / The Entity</p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Initially appears as a wealthy, corrupt figure. Reveals himself to be an ancient, supernatural
+                        entity. He carries the weight of centuries of trauma and the hope of millions. He is weary but
+                        powerful.
+                    </p>
+                </div>
+
+                <div class="char-card">
+                    <h3 class="text-gold text-xl mb-2">The Council</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-4">The Antagonists / The Elite</p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        <strong>The Oba:</strong> Ancient authority, silent observer.<br>
+                        <strong>Chief Adaeze:</strong> Sharp, educated, ruthless.<br>
+                        <strong>Chief Okoro:</strong> Boastful, loud, fearful.<br>
+                        They represent the leadership that has failed the nation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">04</div>
+    </div>
+
+    <!-- Slide 5: Visual Style -->
+    <div class="slide">
+        <div class="p-20 h-full flex flex-col">
+            <h2 class="text-5xl text-white mb-4">Visual Style</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl">High-contrast cinematography meeting magical realism. A journey
+                from grit to the divine.</p>
+
+            <div class="grid grid-cols-3 gap-8 flex-grow">
+                <div class="bg-black p-4 border border-gray-800 flex flex-col">
+                    <div class="h-48 bg-gray-900 mb-4 overflow-hidden">
+                        <img src="assets/hero.png" class="w-full h-full object-cover opacity-80">
+                    </div>
+                    <h3 class="text-gold text-lg mb-2">Act 1: The Grit</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Handheld, frenetic energy. Cold blue tones. Mud, blood, and sweat. Visceral reality.
+                    </p>
+                </div>
+                <div class="bg-black p-4 border border-gray-800 flex flex-col">
+                    <div class="h-48 bg-gray-900 mb-4 overflow-hidden">
+                        <img src="assets/council.png" class="w-full h-full object-cover opacity-80">
+                    </div>
+                    <h3 class="text-gold text-lg mb-2">Act 2: The Shadow</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Static, composed shots. Warm candlelight against deep shadows (Chiaroscuro). Claustrophobic.
+                    </p>
+                </div>
+                <div class="bg-black p-4 border border-gray-800 flex flex-col">
+                    <div class="h-48 bg-gray-900 mb-4 overflow-hidden">
+                        <img src="assets/eagle.png" class="w-full h-full object-cover opacity-80">
+                    </div>
+                    <h3 class="text-gold text-lg mb-2">Act 3: The Divine</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Wide, epic angles. Blinding golden light. Smooth, floating camera movement. Surrealism.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">05</div>
+    </div>
+
+    <!-- Slide 6: Comparables -->
+    <div class="slide">
+        <div class="content-panel items-center text-center h-full">
+            <h2 class="text-5xl text-white mb-16">Comparables</h2>
+            <div class="grid grid-cols-3 gap-12 w-full max-w-5xl">
+                <div>
+                    <div class="comp-circle bg-gray-800 mb-6 flex items-center justify-center">
+                        <span class="text-gray-600 font-cinzel">Black Panther</span>
+                    </div>
+                    <h3 class="text-gold text-xl">Cultural Pride</h3>
+                    <p class="text-sm text-gray-500 mt-2">Regal aesthetics and unapologetic African identity.</p>
+                </div>
+                <div>
+                    <div class="comp-circle bg-gray-800 mb-6 flex items-center justify-center">
+                        <span class="text-gray-600 font-cinzel">12 Years a Slave</span>
+                    </div>
+                    <h3 class="text-gold text-xl">Visceral History</h3>
+                    <p class="text-sm text-gray-500 mt-2">Unflinching look at pain and the weight of the past.</p>
+                </div>
+                <div>
+                    <div class="comp-circle bg-gray-800 mb-6 flex items-center justify-center">
+                        <span class="text-gray-600 font-cinzel">Inception</span>
+                    </div>
+                    <h3 class="text-gold text-xl">Scale & Score</h3>
+                    <p class="text-sm text-gray-500 mt-2">Hans Zimmer-esque soundscapes and reality-bending visuals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">06</div>
+    </div>
+
+    <!-- Slide 7: Director's Statement -->
+    <div class="slide">
+        <div class="grid-editorial">
+            <div class="content-panel bg-charcoal">
+                <h2 class="text-4xl text-white mb-8">Director's Statement</h2>
+                <div class="quote-box">
+                    "This is not just a film. It is a reclamation."
+                </div>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    I am telling a story about the soul of Nigeria. For too long, our narrative has been controlled by
+                    others—by colonizers, by corrupt leaders, by the media.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    "I AM NIGERIA" is an allegory for a nation that is waking up. It is about the pain of our history,
+                    but more importantly, it is about the inevitability of our freedom.
+                </p>
+                <p class="text-gray-300 leading-relaxed">
+                    We are using state-of-the-art technology to tell an ancient story. This film will screen at
+                    Sundance, Cannes, and TIFF because it speaks a universal language: the language of identity.
+                </p>
+                <p class="text-gold font-cinzel mt-8">— Seun Fakuade</p>
+            </div>
+            <div class="image-panel bg-black flex items-center justify-center">
+                <!-- Placeholder for Director Photo if available, else abstract -->
+                <div class="text-center">
+                    <div
+                        class="w-48 h-48 rounded-full border-2 border-gold mx-auto mb-4 flex items-center justify-center bg-gray-900">
+                        <span class="text-gray-600">Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">07</div>
+    </div>
+
+    <!-- Slide 8: The Ask -->
+    <div class="slide">
+        <div class="p-20 h-full flex flex-col justify-center items-center text-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/grain.png" class="w-full h-full object-cover opacity-10">
+            </div>
+
+            <div class="relative z-10 w-full max-w-4xl border border-gold p-16 bg-black/80 backdrop-blur-sm">
+                <h2 class="text-4xl text-white mb-4">Production Budget</h2>
+                <h1 class="text-8xl font-black text-nigeria-green mb-8">₦25,000,000</h1>
+
+                <div class="grid grid-cols-2 gap-8 text-left mb-12 border-t border-b border-gray-800 py-8">
+                    <div>
+                        <h3 class="text-gold text-lg mb-2">Above the Line</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>Cast (A-List Nigerian Talent)</li>
+                            <li>Director & Producers</li>
+                            <li>Rights & Clearances</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-gold text-lg mb-2">Below the Line</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>Production Design (The Chamber)</li>
+                            <li>Camera & Lighting (Arri Alexa)</li>
+                            <li>Post-Production (VFX & Color)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-white font-playfair italic text-xl">
+                    "Invest in the culture. Invest in the future."
+                </p>
+            </div>
+        </div>
+        <div class="page-number">08</div>
+    </div>
+
+    <!-- Slide 9: Contact -->
+    <div class="slide">
+        <img src="assets/eagle.png" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <div class="relative z-10 h-full flex flex-col justify-center items-center">
+            <h2 class="text-6xl text-white font-cinzel mb-12">Bedazzle Media</h2>
+
+            <div class="grid grid-cols-1 gap-8 text-center">
+                <div class="border border-gray-600 p-8 min-w-[400px] bg-black/50">
+                    <p class="text-xs text-gold uppercase tracking-widest mb-2">Contact</p>
+                    <p class="text-2xl text-white">Seun Fakuade</p>
+                    <p class="text-gray-400 mt-2">seun@bedazzlemedia.com</p>
+                </div>
+
+                <div class="border border-gray-600 p-8 min-w-[400px] bg-black/50">
+                    <p class="text-xs text-gold uppercase tracking-widest mb-2">Phone</p>
+                    <p class="text-2xl text-white">+234 800 000 0000</p>
+                </div>
+            </div>
+
+            <div class="mt-24 text-center">
+                <p class="text-gray-500 text-sm tracking-[0.5em] uppercase">LOCKED • DECEMBER 2025</p>
+            </div>
+        </div>
+        <div class="page-number">09</div>
+    </div>
+
+</body>
+
+</html>
